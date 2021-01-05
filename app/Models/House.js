@@ -14,16 +14,15 @@ export default class House {
 
   get Template() {
     return `
-    <div class="col-md-4 col-6 mt-3">
-    <div class="card">
+    <div class="col-md-4 col-6 mt-3 d-flex align-items-stretch flex-wrap">
+    <div class="card cardFont cards">
         <img class="card-img-top" src="${this.imgUrl}" alt="">
         <div class="card-body">
             <h4 class="card-title">${this.price}</h4>
             <p class="card-text">${this.description} built in <b>${this.year}</b></p>
-            <p class="card-text">Bedrooms-${this.bedrooms}
-            Bath-${this.bathrooms}
-            Levels-${this.levels}
-            </p>
+            <p class="card-text">Bedrooms- ${this.bedrooms}</p>
+            <p class="card-text"> Bath- ${this.bathrooms}</p>
+            <p class="card-text">Levels- ${this.levels}</p>
             <div class="text-right">
             <button type="button" class="btn btn-success" onclick="app.housesController.houseBid('${this.id}', '${this.price += 1000}')">Bid</button>
                 <button type="button" class="btn btn-danger" onclick="app.housesController.deleteHouse('${this.id}')">Delete</button>

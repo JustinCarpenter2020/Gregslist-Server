@@ -11,8 +11,8 @@ export default class Job {
 
   get Template() {
     return `
-    <div class="col-md-4 col-6 mt-3">
-    <div class="card">
+    <div class="col-md-4 col-6 mt-3 d-flex align-items-stretch flex-wrap">
+    <div class="card cardFont cards">
         <div class="card-body">
             <h4 class="card-title">${this.company}-${this.jobTitle}-${this.rate}Hourly Rate:</h4>
             <p class="card-text">${this.description} Hours:${this.hours}</b></p>

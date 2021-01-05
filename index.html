@@ -7,17 +7,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/style/main.css">
     <title>mvc-gregslist</title>
 </head>
 
-<body>
+<body class="background">
     <header>
-        <nav class="navbar navbar-dark navbar-expand bg-primary text-light text-center">
-            <a class="navbar-brand" href="#">
-                <span class="ml-2">Gregs-list</span>
-            </a>
-        </nav>
+        <nav class="navbar navbar-dark bg-dark text-center text-white bar">
+           <span class="col-12">Welcome To Gregslist</span>
+          </nav>
     </header>
     <main class="container">
         <div class="row mt-2">
@@ -129,10 +131,13 @@
         </div>
 
 
+        <h2 class="title py-4 text-center">CARS</h2>
         <div class="row" id="cars">
         </div>
+        <h2 class="title py-4 text-center">HOUSES</h2>
         <div class="row" id="houses">
         </div>
+        <h2 class="title py-4 text-center">JOBS</h2>
         <div class="row" id="jobs"></div>
 
     </main>

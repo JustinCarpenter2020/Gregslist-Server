@@ -37,6 +37,7 @@ class CarsService {
     let oldCarIndex = ProxyState.cars.findIndex(c=> c.id ==id)
   
     let temp = ProxyState.cars
+    // @ts-ignore
     temp.splice(oldCarIndex,1,new Car(res.data))
     ProxyState.cars = temp
     
