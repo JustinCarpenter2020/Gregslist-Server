@@ -28,11 +28,12 @@ class HousesService {
     let houseData = { price : newPrice }
     let res = await api.put("houses/"+id, houseData)
     console.log(res);
-    let oldHouseIndex = ProxyState.houses.findIndex(h=> h.id ==id)
+    // let oldHouseIndex = ProxyState.houses.findIndex(h=> h.id ==id)
   
-    let home = ProxyState.houses
-    home.splice(oldHouseIndex,1,new House(res.data))
-    ProxyState.houses = home
+    // let home = ProxyState.houses
+    // home.splice(oldHouseIndex,1,new House(res.data))
+    // ProxyState.houses = home
+    this.getHouses()
 
 
   }

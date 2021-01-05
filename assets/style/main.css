@@ -10729,4 +10729,51 @@ header h2 {
   transform: scale(1.05);
 box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
 }
+
+.listing{
+  border: 2px solid;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 10px 20px;
+  font-weight: 300;
+}
+
+.one{
+  color: black;
+}
+.one:hover {
+  background-color: #4cc9f0;
+  -webkit-box-shadow: 10px 10px 99px 6px rgba(76,201,240,1);
+  -moz-box-shadow: 10px 10px 99px 6px rgba(76,201,240,1);
+  box-shadow: 10px 10px 99px 6px rgba(76,201,240,1);
+}
+
+.two {
+  color: black; 
+}
+
+.two:hover {
+  background-color: #f038ff;
+  -webkit-box-shadow: 10px 10px 99px 6px rgba(240, 56, 255, 1);
+  -moz-box-shadow: 10px 10px 99px 6px rgba(240, 56, 255, 1);
+  box-shadow: 10px 10px 99px 6px rgba(240, 56, 255, 1);
+}
+
+
+.three {
+  color: black;
+}
+
+.three:hover {
+  background-color: #b9e769;
+  -webkit-box-shadow: 10px 10px 99px 6px rgba(185, 231, 105, 1);
+  -moz-box-shadow: 10px 10px 99px 6px rgba(185, 231, 105, 1);
+  box-shadow: 10px 10px 99px 6px rgba(185, 231, 105, 1);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 /*# sourceMappingURL=main.css.map */
