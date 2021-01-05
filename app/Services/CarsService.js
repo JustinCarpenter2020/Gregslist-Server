@@ -30,7 +30,7 @@ class CarsService {
 
   }
 
-  async bid(id, newPrice) {
+  async carBid(id, newPrice) {
     let carData = { price : newPrice }
     let res = await api.put("cars/"+id, carData)
     console.log(res);

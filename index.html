@@ -13,10 +13,9 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-dark navbar-expand bg-primary text-light">
+        <nav class="navbar navbar-dark navbar-expand bg-primary text-light text-center">
             <a class="navbar-brand" href="#">
-                <img src="assets/img/logo.png" width="45" height="45" alt="" loading="lazy">
-                <span class="ml-2">mvc-gregslist</span>
+                <span class="ml-2">Gregs-list</span>
             </a>
         </nav>
     </header>
@@ -57,8 +56,85 @@
                 </div>
             </div>
         </div>
+        <div class="row mt-2">
+            <div class="col text-right">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-outline-primary" data-toggle="modal"
+                    data-target="#new-house-modal">+</button>
+                <!-- Modal -->
+                <div class="modal fade" id="new-house-modal" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">NEW HOUSE FORM</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form onsubmit="app.housesController.createHouse()">
+                                    <input type="number" id="bedrooms" placeholder="Bedrooms" required>
+                                    <input type="number" id="bathrooms" placeholder="Bathrooms" required>
+                                    <input type="number" id="hYear" placeholder="Year" required min="1800" value="2020">
+                                    <input type="number" id="hPrice" placeholder="Price" required min="1">
+                                    <input type="text" id="hDescription" placeholder="Description">
+                                    <input type="text" id="hImgUrl" placeholder="Image Url">
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-dismiss="modal">Close</button>
+                                        <button type="submit" class="btn btn-primary">Save</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col text-right">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-outline-primary" data-toggle="modal"
+                    data-target="#new-job-modal">+</button>
+                <!-- Modal -->
+                <div class="modal fade" id="new-job-modal" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">NEW JOB FORM</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form onsubmit="app.jobsController.createJob()">
+                                    <input type="text" id="company" placeholder="Company" required>
+                                    <input type="number" id="hours" placeholder="Hours" required>
+                                    <input type="number" id="rate" placeholder="$Hourley-Rate" required min="7">
+                                    <input type="text" id="jDescription" placeholder="Description">
+                                    <input type="text" id="jobTitle" placeholder="Job-Title">
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-dismiss="modal">Close</button>
+                                        <button type="submit" class="btn btn-primary">Save</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
         <div class="row" id="cars">
         </div>
+        <div class="row" id="houses">
+        </div>
+        <div class="row" id="jobs"></div>
+
     </main>
     <footer class="container-fluid bg-dark text-light">
         <div class="row text-center" onclick="app.carsController.getOne()">

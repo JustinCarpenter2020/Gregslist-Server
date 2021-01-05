@@ -64,10 +64,10 @@ export default class CarsController {
     }
   }
 
-  bid(id, price){
+  carBid(id, price){
     try {
       console.log(id, price)
-      carsService.bid(id, price)
+      carsService.carBid(id, price)
     } catch (error) {
       console.error(error)
     }
